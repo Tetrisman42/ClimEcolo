@@ -1,0 +1,40 @@
+page-accueil {
+  #btnPhoto{
+    width : 100%;
+    margin : 0 auto;
+    display: block;
+    margin-top: 0%;
+  }
+
+  #logoAccueil {
+    max-width:50%;
+    height:auto;
+  }
+
+  #divLogoAccueil{
+
+    width: 50%;
+    display: inline-block;
+    float:left;
+    overflow:hidden;
+  }
+
+  #slidesAccueil
+  {
+    height: auto;
+  }
+
+  .label-md {
+    margin: 1px 8px 13px 0;
+}
+
+.card-title-ios, .card-title{
+  padding: 5% !important;
+  font-size: 1.2rem !important;
+}
+
+.slidesAccueil{
+  height: 50%;
+}
+
+}

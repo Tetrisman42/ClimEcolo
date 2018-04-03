@@ -1,3 +1,46 @@
 page-home {
 
 }
+page-home {
+  html{font-size:110%;}
+@media(min-width:60em){html{font-size: 90%}}
+  #logoHome{
+    margin : 0 auto;
+    display: block;
+    margin-top: 10%;
+  }
+
+[padding] .scroll-content
+{
+  padding: 12% !important;
+}
+  .item-md
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  h1
+  {
+    margin : 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 2rem !important;
+  }
+
+  #connexion
+  {
+    width : 100%;
+    margin : 0 auto;
+    display: block;
+    margin-top: 30px;
+  }
+
+  #logoHome{
+    background-image: url("../assets/imgs/logoEcolo.jpg");
+  }
+
+#labelLogSignIn{
+  margin:auto; text-align:center; padding-top: 2rem;
+  }
+}

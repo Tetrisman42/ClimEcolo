@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar></ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <img src="{{image}}"/>
+    <ion-item>
+        <ion-label color="primary" full floating>Titre {{image}}</ion-label>
+        <ion-input type="text" [(ngModel)]="titre" required="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" full floating stacked>Description</ion-label>
+      <ion-textarea [(ngModel)]="description"></ion-textarea>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+              <ion-label color="primary" full floating>Tarif proposé</ion-label>
+              <ion-input type="number" [(ngModel)]="description" required="true"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label color="primary">Négociable</ion-label>
+            <ion-select [(ngModel)]="negociable">
+              <ion-option value="true">Oui</ion-option>
+              <ion-option value="false">Non</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  <button ion-button block id="btnContact"><p>Envoyer l'annonce</p><ion-icon margin-left=2% name="send"></ion-icon></button>
+</ion-content>

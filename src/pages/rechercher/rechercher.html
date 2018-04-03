@@ -1,0 +1,118 @@
+<ion-content padding>
+
+<img id="logoClimEcolo" src="./assets/imgs/logoEcolo.jpg"/>
+<ion-item>
+  <ion-label color="grey" floating>Mots clés</ion-label>
+  <ion-input type="text"></ion-input>
+</ion-item>
+
+<!-- POSITION -->
+<ion-grid padding-top="10px">
+  <ion-row>
+    <ion-col col-auto>
+      <ion-checkbox [(ngModel)]="positionDisabled"></ion-checkbox>
+    </ion-col>
+    <ion-col col-auto>
+      <ion-item>
+          <ion-label color="grey" id="labelPosition">Position</ion-label>
+          <ion-input type="text" [disabled]="!positionDisabled"></ion-input>
+
+      </ion-item>
+    </ion-col>
+    <ion-col col-auto>
+      <ion-icon name="locate"></ion-icon>
+  </ion-col>
+  </ion-row>
+</ion-grid>
+<!-- /POSITION -->
+
+<!-- DATE -->
+<ion-grid padding-top="10px">
+  <ion-row>
+    <ion-col col-auto>
+      <ion-checkbox [(ngModel)]="dateDisabled"></ion-checkbox>
+    </ion-col>
+    <ion-col col-auto>
+      <ion-item >
+        <ion-label>Entre le</ion-label>
+        <ion-datetime displayFormat="DD MMMM YYYY" [disabled]="!dateDisabled">
+      </ion-datetime>
+      </ion-item>
+    </ion-col>
+    <ion-col col-auto>
+      <ion-item>
+        <ion-label>et le</ion-label>
+        <ion-datetime displayFormat="DDDD D MMMM YYYY" [disabled]="!dateDisabled"></ion-datetime>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<!-- /DATE -->
+
+<!-- SLIDES HISTORIQUE RECHERCHE -->
+<div><ion-label style="text-align: center">Historique des recherches</ion-label></div>
+<ion-slides style="height: auto;" slidesPerView="3" id="slidesAccueil">
+  <ion-slide>
+          <ion-card>
+            <img src="./assets/imgs/logoEcolo.jpg"/>
+            <ion-card-content >
+              <ion-card-title>
+                ClimEcolo
+                </ion-card-title>
+            </ion-card-content>
+          </ion-card>
+  </ion-slide>
+  <ion-slide>
+          <ion-card>
+            <img src="./assets/imgs/logoEcolo.jpg"/>
+            <ion-card-content >
+              <ion-card-title>
+                ClimEcolo
+                </ion-card-title>
+            </ion-card-content>
+          </ion-card>
+  </ion-slide>
+  <ion-slide>
+          <ion-card>
+            <img src="./assets/imgs/logoEcolo.jpg"/>
+            <ion-card-content >
+              <ion-card-title>
+                ClimEcolo
+                </ion-card-title>
+            </ion-card-content>
+          </ion-card>
+  </ion-slide>
+  <ion-slide>
+          <ion-card>
+            <img src="./assets/imgs/logoEcolo.jpg"/>
+            <ion-card-content >
+              <ion-card-title>
+                ClimEcolo
+                </ion-card-title>
+            </ion-card-content>
+          </ion-card>
+  </ion-slide>
+  <ion-slide>
+          <ion-card>
+            <img src="./assets/imgs/logoEcolo.jpg"/>
+            <ion-card-content >
+              <ion-card-title>
+                ClimEcolo
+                </ion-card-title>
+            </ion-card-content>
+          </ion-card>
+  </ion-slide>
+  <ion-slide>
+          <ion-card>
+            <img src="./assets/imgs/logoEcolo.jpg"/>
+            <ion-card-content >
+              <ion-card-title>
+                ClimEcolo
+                </ion-card-title>
+            </ion-card-content>
+          </ion-card>
+  </ion-slide>
+</ion-slides>
+<!-- /SLIDES HISTORIQUE RECHERCHE -->
+
+</ion-content>

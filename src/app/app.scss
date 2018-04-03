@@ -1,6 +1,33 @@
 // http://ionicframework.com/docs/theming/
+.card-title-md
+{
+  font-size: 0.8em;
+  padding: 3px 0;
+}
 
+.card-md p
+{
+      margin: 0 0 2px;
+}
 
+.card-content-md
+{
+      padding: 1px 1px;
+}
+
+#logoClimEcolo{
+   height: auto !important;
+   width: auto !important;
+   margin: auto;
+   display: block;
+}
+
+.ion-md-locate:before
+{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These

@@ -1,0 +1,28 @@
+<!--
+  Generated template for the AnnoncePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar></ion-navbar>
+</ion-header>
+
+
+<ion-content padding >
+  <ion-card>
+    <img src="./assets/imgs/{{nomImg}}"/>
+    <ion-card-content >
+      <ion-card-title>{{titre}}</ion-card-title>
+      <p>{{date}}</p><br>
+        <p>{{description}}</p>
+        <ion-grid>
+          <ion-row>
+            <ion-col><p>Tarif proposé : <b>{{tarif}}€</b></p></ion-col>
+            <ion-col><p>Négociable : <b>{{negociable}}</b></p></ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button block id="btnContact"><p>Contacter l'annonceur</p><ion-icon margin-left=2% name="contacts"></ion-icon></button>
+</ion-content>

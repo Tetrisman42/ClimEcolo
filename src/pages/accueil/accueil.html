@@ -1,0 +1,31 @@
+<ion-content padding>
+<button ion-button id="btnPhoto" (tap)="prendrePhoto()"><ion-icon name="camera"></ion-icon></button>
+<img padding-top="1%" id="logoClimEcolo" src="./assets/imgs/logoEcolo.jpg"/>
+
+<!-- SLIDES DERNIERES ANNONCES -->
+<div><ion-label style="text-align: center;">Dernières annonces</ion-label></div>
+<ion-slides slidesPerView="2" id="slidesAccueil">
+  <ion-slide>
+          <ion-card (tap)="goToAnnonce()">
+            <img src="./assets/imgs/{{nomImg1}}"/>
+            <ion-card-content >
+              <ion-card-title>
+                {{title1}}
+                </ion-card-title>
+                <p style="font-size:0.7em;">{{descrRapide1}}</p>
+            </ion-card-content>
+          </ion-card>
+  </ion-slide>
+</ion-slides>
+<!-- /SLIDES DERNIERES ANNONCES -->
+
+<!-- SLIDES HISTORIQUE -->
+<div><ion-label style="text-align: center">Historique</ion-label></div>
+<ion-slides slidesPerView="3" id="slidesAccueil">
+  {{historique}}
+</ion-slides>
+<!-- /SLIDES HISTORIQUE -->
+
+
+
+</ion-content>

@@ -1,17 +1,43 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding="true">
+  <img id="logoHome" src="./assets/imgs/logoEcolo.jpg" alt="Clim'Ecolo">
+  <h1 style="color: grey">Connexion</h1>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+<!-- ************* MAIL *************** -->
+<div  *ngIf="hideMail">
+  <ion-item style="height: 10%">
+      <ion-label color="primary" full floating>E-Mail</ion-label>
+      <ion-input type="mail" [(ngModel)]="mail" required="true"></ion-input>
+  </ion-item>
+
+
+<ion-item no-lines>
+  <button item-right ion-button *ngIf="hideMail"  id="BTNmailToTel" (click)="mailToTel()">Tel</button>
+</ion-item>
+</div>
+
+<!-- ********************************* -->
+
+<!-- ************* TEL *************** -->
+<div  *ngIf="hideTel" >
+  <ion-item>
+      <ion-label color="primary" full floating>N°Tel</ion-label>
+      <ion-input type="number" [(ngModel)]="tel" required="true"></ion-input>
+  </ion-item>
+
+
+<ion-item no-lines>
+  <button item-right *ngIf="hideTel" id="BTNtelToMail" ion-button (click)="telToMail()">Mail</button>
+</ion-item>
+</div>
+<!-- ********************************* -->
+
+
+<ion-item>
+    <ion-label color="primary" full floating>Mot de passe</ion-label>
+    <ion-input type="password" [(ngModel)]="password" required="true"></ion-input>
+</ion-item>
+<button ion-button id="connexion" (tap)="logSignIn()" >{{authBtnContent}}</button>
+
+<ion-label id="labelLogSignIn" (tap)="SwitchAuthentification()">{{authLabelContent}}</ion-label>
 </ion-content>
